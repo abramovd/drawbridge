@@ -31,3 +31,13 @@ func AddSlashes(s string) string {
 	}
 	return "/" + s + "/"
 }
+
+// StringInSlice checks if value is a valid choice
+func StringInSlice(a string, list []string) bool {
+	for _, b := range list {
+		if b == a {
+			return true
+		}
+	}
+	return false
+}

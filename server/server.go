@@ -15,6 +15,7 @@ import (
 	// Need to import all plugins to call their init functions
 	_ "github.com/jakewright/drawbridge/plugin/log"
 	_ "github.com/jakewright/drawbridge/plugin/retry"
+	_ "github.com/jakewright/drawbridge/plugin/jwt"
 )
 
 func ListenAndServe(configuration *config.Configuration) error {
